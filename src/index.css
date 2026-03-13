@@ -3,12 +3,6 @@
 @tailwind utilities;
 
 
-:root {
-  --Yellow: rgb(248, 203, 99);
-  --Orange: #fb7a56ff;
-  --Red: #ff4400ff
-}
-
 html{
   font-size: 1.25vw;
 }

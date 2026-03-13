@@ -2,7 +2,7 @@ function Password({ password, copyPassword, isCopied }) {
   return (
     <div className="container__password mt-[3rem] flex items-center justify-between bg-grey md:mt-[3.3rem] lg:mt-[1.5rem]">
       <input
-        className="container__password__input placeholder:text-red-400 w-full border-none bg-grey py-[2.8rem] pl-[3.3rem] text-[5.33rem] text-textPassword placeholder:text-lightGrey placeholder:opacity-50 focus:outline-none md:py-[1.5rem] md:pl-[3.4rem] md:text-[3.5rem] lg:py-[1rem] lg:pl-[1.8rem] lg:text-[1.79rem]"
+        className="container__password__input placeholder:text-red-400 w-full border-none bg-grey py-[2.8rem] pl-[3.3rem] text-[5.33rem] text-textPassword placeholder:!text-lightGrey placeholder:opacity-50 focus:outline-none md:py-[1.5rem] md:pl-[3.4rem] md:text-[3.5rem] lg:py-[1rem] lg:pl-[1.8rem] lg:text-[1.79rem]"
         type="text"
         name="password"
         id="password"
