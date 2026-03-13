@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --Yellow: rgb(248, 203, 99);
+  --Orange: #fb7a56ff;
+  --Red: #ff4400ff
+}
+
+html{
+  font-size: 1.25vw;
+}
+
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./assets/fonts/static/JetBrainsMono-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+button{
+  @apply cursor-custom ;
+}
+
+
+.slider {
+  @apply lg:h-[0.6rem] md:h-[0.8rem] h-[1.8rem] cursor-custom;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #b0ffbb 0%,          
+    #b0ffbb var(--value),
+    #3f48cc var(--value),
+    #3f48cc 100%         
+  );
+
+  
+  transition: background 0.3s ease;
+}
+
+.slider::-webkit-slider-thumb {
+  @apply lg:w-[1.75rem] md:w-[3rem] w-[6rem] aspect-square;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: hsl(252, 11%, 91%); 
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.slider::-moz-range-thumb {
+  appearance: none;
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: hsl(252, 11%, 91%);
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.slider::-ms-thumb {
+  appearance: none;
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: hsl(252, 11%, 91%);
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background-color: hsl(248, 15%, 11%);
+  border: 1px solid hsl(127, 100%, 82%);
+}
+
+.slider::-moz-range-thumb:hover {
+  background-color: hsl(248, 15%, 11%);
+  border: 1px solid hsl(127, 100%, 82%);
+}
+
+.slider::-ms-thumb:hover {
+  background-color: hsl(248, 15%, 11%);
+  border: 1px solid hsl(127, 100%, 82%);
+}
+
+.checkbox {
+  @apply cursor-custom lg:w-[1.1rem] md:w-[2rem] w-[3.8rem] aspect-square outline outline-[0.12rem] outline-almostWhite hover:outline-neonGreen transition;
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  
+}
+
+.checkbox:checked {
+  @apply bg-neonGreen bg-[url('./assets/images/icon-check.svg')] bg-no-repeat bg-center outline-neonGreen lg:bg-[size:0.85rem_0.85rem] md:bg-[size:1.5rem_1.5rem] sm:bg-[size:2.5rem_2.5rem] bg-[size:2.5rem_2.5rem];
+  
+}
+
+
+.generate-button__icon{
+  @apply lg:w-[0.65rem] md:w-[1.3rem] w-[2.5rem] aspect-square;
+}
+
+
